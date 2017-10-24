@@ -1,15 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace HackerRank
 {
-    class Program
+    class Solution
     {
-        static void Main(string[] args)
+        static void Main(String[] args)
         {
+            int n = Convert.ToInt32(Console.ReadLine());
+            string[] arr_temp = Console.ReadLine().Split(' ');
+            int[] arr = Array.ConvertAll(arr_temp, Int32.Parse);
+
+            StringBuilder sb = new StringBuilder();
+
+            for(int i = arr.Length -1; i >= 0; i--)
+            {
+                sb.Append(arr[i] + " ");
+            }
+
+            Console.WriteLine(sb.ToString());
+
+            Console.ReadKey();
         }
     }
 }
