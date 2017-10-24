@@ -20,7 +20,6 @@ namespace HackerRank
 
             Console.WriteLine(sb.ToString());
 
-            Console.ReadKey();
         }
     }
 }
